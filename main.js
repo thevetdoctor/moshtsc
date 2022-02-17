@@ -1,0 +1,25 @@
+"use strict";
+exports.__esModule = true;
+var point_1 = require("./point");
+var a;
+var b;
+var c;
+var d;
+var e = [1, 2, 3];
+var f = [1, true, 'blue'];
+var colorz = 'blue' || 'red' || 'green';
+var blue = 1;
+var red = 2;
+var green = 3;
+var Colors;
+(function (Colors) {
+    Colors[Colors["blue"] = 0] = "blue";
+    Colors[Colors["red"] = 1] = "red";
+    Colors[Colors["green"] = 2] = "green";
+})(Colors || (Colors = {}));
+;
+var backgroundColor = Colors.blue;
+var point = new point_1.Point(1, 3);
+var xValue = point.getX();
+point.setX(4);
+point.draw();
